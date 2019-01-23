@@ -1,0 +1,98 @@
+
+/* Includes */
+#include "stm32f4xx.h"
+#include "GPIO_Driver.h"
+#include "Timer_Delay.h"
+//#include "lcd_8bit.h"
+#include "lcd_4bit.h"
+#include "I2C_Library.h"
+
+/* Private macro */
+/* Private variables */
+/* Private function prototypes */
+/* Private functions */
+
+/**
+**===========================================================================
+**
+**  	GPIO Driver
+**
+**===========================================================================
+*/
+
+
+void I2C_Enable();
+void I2C_AddressWrite(uint8_t i2c_address);
+void I2C_Data(uint8_t i2c_address);
+
+int main(void)
+{
+
+/*config_clock_50MHz(); // Configuring the delays, as well as setting the clk freq
+lcd_init();
+lcd_goto_xy(2,1);
+lcd_print("Suad");
+lcd_goto_xy(4,2);
+lcd_print("Shahini");
+//delay_mS(2000);
+*/
+
+
+
+
+
+
+
+
+
+I2C_Enable();
+
+
+
+
+I2C_AddressWrite(0b0100111);
+
+I2C_Data(0x38);
+
+
+
+
+//******************
+//delay_mS(5);
+
+I2C_AddressWrite(0b0100111);
+I2C_Data(0x32);
+
+
+
+
+I2C_AddressWrite(0b0100111);
+I2C_Data(0x28);
+
+I2C_Stop();
+
+
+
+// TODO 4-bit I2C, Send 1 nibble at a time
+
+//I2C_Stop();
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

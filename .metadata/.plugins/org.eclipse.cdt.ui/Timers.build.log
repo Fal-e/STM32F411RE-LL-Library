@@ -1,0 +1,7 @@
+00:26:42 **** Incremental Build of configuration Debug for project Timers ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F411xE -I../src -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\Timers\User Library -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -g -Wa,--warn -x assembler-with-cpp -o src\startup_stm32f411xe.o ..\src\startup_stm32f411xe.s 
+arm-atollic-eabi-gcc: error: Library: No such file or directory
+
+00:26:42 Build Finished (took 72ms)
+
