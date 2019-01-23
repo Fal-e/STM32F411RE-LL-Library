@@ -29,15 +29,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  12 .debug_ranges 000000f8  00000000  00000000  00022e10  2**3
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_line   00000d14  00000000  00000000  00022f08  2**0
+ 13 .debug_line   00000d1a  00000000  00000000  00022f08  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_str    00000e74  00000000  00000000  00023c1c  2**0
+ 14 .debug_str    00000e74  00000000  00000000  00023c22  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .comment      0000007c  00000000  00000000  00024a90  2**0
+ 15 .comment      0000007c  00000000  00000000  00024a96  2**0
                   CONTENTS, READONLY
- 16 .debug_frame  000003cc  00000000  00000000  00024b0c  2**2
+ 16 .debug_frame  000003cc  00000000  00000000  00024b14  2**2
                   CONTENTS, READONLY, DEBUGGING
- 17 .stabstr      0000003f  00000000  00000000  00024ed8  2**0
+ 17 .stabstr      0000003f  00000000  00000000  00024ee0  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -71,9 +71,9 @@ Disassembly of section .text:
  80001d4:	080017dc 	.word	0x080017dc
 
 080001d8 <main>:
-void I2C_Enable();
-void I2C_AddressWrite(uint8_t i2c_address);
-void I2C_Data(uint8_t i2c_address);
+*/
+
+
 
 int main(void)
 {
@@ -98,30 +98,30 @@ I2C_start();
 I2C_addressWrite(0x27);
  80001e8:	2027      	movs	r0, #39	; 0x27
  80001ea:	f001 f973 	bl	80014d4 <I2C_addressWrite>
-I2C_data(0x33);
- 80001ee:	2033      	movs	r0, #51	; 0x33
+I2C_data(0x38);
+ 80001ee:	2038      	movs	r0, #56	; 0x38
  80001f0:	f001 f990 	bl	8001514 <I2C_data>
 I2C_data(0x22);
  80001f4:	2022      	movs	r0, #34	; 0x22
  80001f6:	f001 f98d 	bl	8001514 <I2C_data>
-I2C_data(0x28);
- 80001fa:	2028      	movs	r0, #40	; 0x28
- 80001fc:	f001 f98a 	bl	8001514 <I2C_data>
 I2C_stop();
- 8000200:	f001 f9a0 	bl	8001544 <I2C_stop>
+ 80001fa:	f001 f9a3 	bl	8001544 <I2C_stop>
 
 
 delay_mS(10);
- 8000204:	200a      	movs	r0, #10
- 8000206:	f001 faa1 	bl	800174c <delay_mS>
+ 80001fe:	200a      	movs	r0, #10
+ 8000200:	f001 faa4 	bl	800174c <delay_mS>
 
 I2C_start();
- 800020a:	f001 f9b1 	bl	8001570 <I2C_start>
+ 8000204:	f001 f9b4 	bl	8001570 <I2C_start>
 I2C_addressWrite(0x27);
- 800020e:	2027      	movs	r0, #39	; 0x27
- 8000210:	f001 f960 	bl	80014d4 <I2C_addressWrite>
-I2C_data(0x33);
- 8000214:	2033      	movs	r0, #51	; 0x33
+ 8000208:	2027      	movs	r0, #39	; 0x27
+ 800020a:	f001 f963 	bl	80014d4 <I2C_addressWrite>
+I2C_data(0x38);
+ 800020e:	2038      	movs	r0, #56	; 0x38
+ 8000210:	f001 f980 	bl	8001514 <I2C_data>
+I2C_data(0x22);
+ 8000214:	2022      	movs	r0, #34	; 0x22
  8000216:	f001 f97d 	bl	8001514 <I2C_data>
 I2C_stop();
  800021a:	f001 f993 	bl	8001544 <I2C_stop>
@@ -2696,20 +2696,20 @@ void I2C_stop()
 {
  8001544:	b480      	push	{r7}
  8001546:	af00      	add	r7, sp, #0
-	while (!(I2C1->SR1 & I2C_SR1_BTF))
- 8001548:	e005      	b.n	8001556 <I2C_stop+0x12>
+	while (!(I2C1->SR1 & I2C_SR1_BTF));
+ 8001548:	bf00      	nop
+ 800154a:	4b08      	ldr	r3, [pc, #32]	; (800156c <I2C_stop+0x28>)
+ 800154c:	695b      	ldr	r3, [r3, #20]
+ 800154e:	f003 0304 	and.w	r3, r3, #4
+ 8001552:	2b00      	cmp	r3, #0
+ 8001554:	d0f9      	beq.n	800154a <I2C_stop+0x6>
 	I2C1->CR1 |= I2C_CR1_STOP;
- 800154a:	4a08      	ldr	r2, [pc, #32]	; (800156c <I2C_stop+0x28>)
- 800154c:	4b07      	ldr	r3, [pc, #28]	; (800156c <I2C_stop+0x28>)
- 800154e:	681b      	ldr	r3, [r3, #0]
- 8001550:	f443 7300 	orr.w	r3, r3, #512	; 0x200
- 8001554:	6013      	str	r3, [r2, #0]
-	while (!(I2C1->SR1 & I2C_SR1_BTF))
- 8001556:	4b05      	ldr	r3, [pc, #20]	; (800156c <I2C_stop+0x28>)
- 8001558:	695b      	ldr	r3, [r3, #20]
- 800155a:	f003 0304 	and.w	r3, r3, #4
- 800155e:	2b00      	cmp	r3, #0
- 8001560:	d0f3      	beq.n	800154a <I2C_stop+0x6>
+ 8001556:	4a05      	ldr	r2, [pc, #20]	; (800156c <I2C_stop+0x28>)
+ 8001558:	4b04      	ldr	r3, [pc, #16]	; (800156c <I2C_stop+0x28>)
+ 800155a:	681b      	ldr	r3, [r3, #0]
+ 800155c:	f443 7300 	orr.w	r3, r3, #512	; 0x200
+ 8001560:	6013      	str	r3, [r2, #0]
+
 }
  8001562:	bf00      	nop
  8001564:	46bd      	mov	sp, r7
@@ -2724,14 +2724,13 @@ void I2C_start()
 {
  8001570:	b480      	push	{r7}
  8001572:	af00      	add	r7, sp, #0
-
+	//while(I2C1->SR2 & I2C_SR2_BUSY);// Unnecessary
 	I2C1->CR1 |= I2C_CR1_START;
  8001574:	4a08      	ldr	r2, [pc, #32]	; (8001598 <I2C_start+0x28>)
  8001576:	4b08      	ldr	r3, [pc, #32]	; (8001598 <I2C_start+0x28>)
  8001578:	681b      	ldr	r3, [r3, #0]
  800157a:	f443 7380 	orr.w	r3, r3, #256	; 0x100
  800157e:	6013      	str	r3, [r2, #0]
-
 	while(!(I2C1->SR1 & I2C_SR1_SB)); // keep waiting until the SB bit has been set
  8001580:	bf00      	nop
  8001582:	4b05      	ldr	r3, [pc, #20]	; (8001598 <I2C_start+0x28>)

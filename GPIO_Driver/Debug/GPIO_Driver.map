@@ -496,13 +496,13 @@ OUTPUT(GPIO_Driver.elf elf32-littlearm)
  .debug_ranges  0x000000a0       0x30 User Library\I2C_Library.o
  .debug_ranges  0x000000d0       0x28 User Library\Timer_Delay.o
 
-.debug_line     0x00000000      0xd14
+.debug_line     0x00000000      0xd1a
  .debug_line    0x00000000      0x242 User Application\main.o
  .debug_line    0x00000242       0x88 User Application\startup_stm32f411xe.o
  .debug_line    0x000002ca      0x1e6 User Application\system_stm32f4xx.o
  .debug_line    0x000004b0      0x3fa User Library\GPIO_Driver.o
- .debug_line    0x000008aa      0x235 User Library\I2C_Library.o
- .debug_line    0x00000adf      0x235 User Library\Timer_Delay.o
+ .debug_line    0x000008aa      0x23b User Library\I2C_Library.o
+ .debug_line    0x00000ae5      0x235 User Library\Timer_Delay.o
 
 .debug_str      0x00000000      0xe74
  .debug_str     0x00000000      0x598 User Application\main.o

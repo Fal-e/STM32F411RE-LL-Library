@@ -2,4 +2,4 @@ I2C_Library.c:11:6:I2C_enable	88	static
 I2C_Library.c:51:6:I2C_addressWrite	16	static
 I2C_Library.c:63:6:I2C_data	16	static
 I2C_Library.c:69:6:I2C_stop	4	static
-I2C_Library.c:76:6:I2C_start	4	static
+I2C_Library.c:77:6:I2C_start	4	static

@@ -9681,3 +9681,152 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-01-23 22:29:16.985 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_AU
+Framework arguments:  C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86 C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\.cproject
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-01-23 22:29:17.860
+!MESSAGE Loading product manager
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-01-23 22:29:17.865
+!MESSAGE OS info: Windows 7, 6.1, x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-01-23 22:29:17.957
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY TrueSTUDIO 1 0 2019-01-23 22:29:19.987
+!MESSAGE Target: STM32, Version: 9.1.0, Build date: 20181011-1241, Installation dir: /C:/Program Files (x86)/Atollic/TrueSTUDIO for STM32 9.1.0/ide/
+
+!ENTRY TrueSTUDIO 1 0 2019-01-23 22:29:19.987
+!MESSAGE Workspace: C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1
+
+!ENTRY org.eclipse.jface 2 0 2019-01-23 22:29:20.953
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-23 22:29:20.953
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f2c9e8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17692cb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.atollic.truestudio.integration.processorexpert 0 0 2019-01-23 22:29:23.775
+!MESSAGE Atollic TrueSTUDIO Processor Expert integration is up.
+
+!ENTRY edu.hawaii.ics.csdl.jupiter 1 0 2019-01-23 22:29:23.814
+!MESSAGE Code Review is up.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-01-23 22:29:23.968
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Falcon'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:39:20.723
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1231d07): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:39:20.723
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:39:20.723
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@ead940): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:39:20.723
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:39:20.724
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@19b0f1e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:39:20.724
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:39:20.724
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@5bedcf): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:39:20.724
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:39:20.724
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@18844f5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:39:20.724
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:39:20.724
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1cebf1d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:39:20.724
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:39:20.725
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@92ad45): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:39:20.725
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:39:20.725
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@114144d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:39:20.725
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:39:20.725
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@ea5876): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:39:20.725
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:50:18.607
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@15d609e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:50:18.607
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:50:18.607
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1de1f52): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:50:18.607
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:50:18.607
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@b6992): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:50:18.607
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:50:18.608
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@6e6219): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:50:18.608
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:50:18.608
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@31b05a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:50:18.608
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:50:18.608
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1020001): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:50:18.608
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:50:18.609
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@50a70a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:50:18.609
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:50:18.609
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1876873): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:50:18.609
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-01-23 22:50:18.609
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@65b5b9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-01-23 22:50:18.609
+!MESSAGE Connection is shut down
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-01-24 00:35:12.019
+!MESSAGE Unloading product manager

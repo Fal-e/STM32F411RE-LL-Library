@@ -21,9 +21,6 @@
 */
 
 
-void I2C_Enable();
-void I2C_AddressWrite(uint8_t i2c_address);
-void I2C_Data(uint8_t i2c_address);
 
 int main(void)
 {
@@ -46,9 +43,8 @@ I2C_enable();
 
 I2C_start();
 I2C_addressWrite(0x27);
-I2C_data(0x33);
+I2C_data(0x38);
 I2C_data(0x22);
-I2C_data(0x28);
 I2C_stop();
 
 
@@ -56,13 +52,9 @@ delay_mS(10);
 
 I2C_start();
 I2C_addressWrite(0x27);
-I2C_data(0x33);
+I2C_data(0x38);
+I2C_data(0x22);
 I2C_stop();
-
-
-
-
-
 
 // TODO: Code that handles NACK from slave.
 // The program is currently stuck in an infinite loop in the I2C_data command
@@ -78,8 +70,8 @@ I2C_stop();
 //
 }
 
-
-/*void I2C1_ER_IRQHandler()
+/*
+void I2C1_ER_IRQHandler()
 {
 	I2C1->SR1 = 0x00;
 	//I2C1->SR1 &= ~I2C_SR1_AF;

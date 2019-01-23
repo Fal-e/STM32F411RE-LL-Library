@@ -3851,3 +3851,740 @@ Output sent to: GPIO_Driver.list
 Generate listing file done
 Generate build reports done
 Info: Nothing to build for GPIO_Driver
+22:29:40 **** Rebuild of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -g -Wa,--warn -x assembler-with-cpp -o User Application\startup_stm32f411xe.o ..\User Application\startup_stm32f411xe.s 
+arm-atollic-eabi-gcc -c ..\User Library\lcd_8bit.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\lcd_8bit.o 
+arm-atollic-eabi-gcc -c ..\User Application\tiny_printf.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\tiny_printf.o 
+arm-atollic-eabi-gcc -c ..\User Library\GPIO_Driver.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\GPIO_Driver.o 
+..\User Library\GPIO_Driver.c: In function 'config_pin':
+..\User Library\GPIO_Driver.c:50:40: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+   port->MODER &= ~(1<<PINPOS[pinNumber]+1);
+                       ~~~~~~~~~~~~~~~~~^~
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -c ..\User Library\Timer_Delay.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\Timer_Delay.o 
+arm-atollic-eabi-gcc -c ..\User Library\lcd_4bit.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\lcd_4bit.o 
+In file included from ..\User Library\lcd_4bit.h:13:0,
+                 from ..\User Library\lcd_4bit.c:7:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -c ..\User Application\system_stm32f4xx.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\system_stm32f4xx.o 
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+22:31:30 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6228	    136	   1056	   7420	   1cfc	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+22:32:49 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+22:33:10 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6044	    136	   1056	   7236	   1c44	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+22:33:40 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6040	    136	   1056	   7232	   1c40	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+22:37:11 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6044	    136	   1056	   7236	   1c44	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for GPIO_Driver
+22:40:10 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+..\User Application\main.c: In function 'main':
+..\User Application\main.c:53:1: error: expected ';' before 'I2C_start'
+ I2C_start();
+ ^~~~~~~~~
+In file included from ..\User Application\main.c:4:0:
+..\User Application\main.c: At top level:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+22:40:20 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6120	    136	   1056	   7312	   1c90	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for GPIO_Driver
+Info: Nothing to build for GPIO_Driver
+Info: Nothing to build for GPIO_Driver
+Info: Nothing to build for GPIO_Driver
+Info: Nothing to build for GPIO_Driver
+Info: Nothing to build for GPIO_Driver
+22:54:36 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6128	    136	   1056	   7320	   1c98	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+22:59:01 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+22:59:25 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+23:38:54 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6148	    136	   1056	   7340	   1cac	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+23:41:02 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6096	    136	   1056	   7288	   1c78	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+23:45:43 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6084	    136	   1056	   7276	   1c6c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+23:46:41 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6084	    136	   1056	   7276	   1c6c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+23:47:34 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6088	    136	   1056	   7280	   1c70	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+23:50:58 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+23:51:50 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+23:52:19 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6120	    136	   1056	   7312	   1c90	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:06:48 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6136	    136	   1056	   7328	   1ca0	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:07:25 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6136	    136	   1056	   7328	   1ca0	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:16:23 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+..\User Application\main.c: In function 'main':
+..\User Application\main.c:52:14: error: 'i2c_address' undeclared (first use in this function)
+  I2C1->DR = (i2c_address<<1) & 0b11111110; //lsb is 0 (Reset), therefore master is in transmitter mode
+              ^~~~~~~~~~~
+..\User Application\main.c:52:14: note: each undeclared identifier is reported only once for each function it appears in
+..\User Application\main.c:58:13: error: 'i2c_data' undeclared (first use in this function)
+  I2C1->DR = i2c_data;
+             ^~~~~~~~
+In file included from ..\User Application\main.c:4:0:
+..\User Application\main.c: At top level:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+00:16:48 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   5912	    136	   1056	   7104	   1bc0	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:17:08 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6020	    136	   1056	   7212	   1c2c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:17:43 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6096	    136	   1056	   7288	   1c78	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:19:25 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+..\User Application\main.c: In function 'main':
+..\User Application\main.c:73:2: warning: "/*" within comment [-Wcomment]
+  /* Address Write */
+   
+..\User Application\main.c:86:3: error: expected expression before '/' token
+  */
+   ^
+In file included from ..\User Application\main.c:4:0:
+..\User Application\main.c: At top level:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+00:19:38 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   5912	    136	   1056	   7104	   1bc0	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:20:24 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+..\User Application\main.c: In function 'main':
+..\User Application\main.c:86:3: error: expected expression before '/' token
+  */
+   ^
+In file included from ..\User Application\main.c:4:0:
+..\User Application\main.c: At top level:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+00:20:33 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6112	    136	   1056	   7304	   1c88	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:26:02 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:26:46 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:28:21 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:29:19 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:30:48 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6016	    136	   1056	   7208	   1c28	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:31:21 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6028	    136	   1056	   7220	   1c34	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:32:32 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+..\User Library\I2C_Library.c: In function 'I2C_stop':
+..\User Library\I2C_Library.c:74:1: error: expected expression before '}' token
+ }
+ ^
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\I2C_Library.c: At top level:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+00:33:02 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Library\I2C_Library.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Library\I2C_Library.o 
+In file included from ..\User Library\I2C_Library.h:11:0,
+                 from ..\User Library\I2C_Library.c:8:
+..\User Library\GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6028	    136	   1056	   7220	   1c34	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:33:32 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6056	    136	   1056	   7248	   1c50	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done
+00:33:59 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
+In file included from ..\User Application\main.c:4:0:
+C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library/GPIO_Driver.h:124:13: warning: 'config_pin' declared 'static' but never defined [-Wunused-function]
+ static void config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t pinSpeed, uint32_t mode, uint16_t mode_type, uint32_t alt_func);
+             ^~~~~~~~~~
+arm-atollic-eabi-gcc -o GPIO_Driver.elf User Application\main.o User Application\startup_stm32f411xe.o User Application\system_stm32f4xx.o User Application\tiny_printf.o User Library\GPIO_Driver.o User Library\I2C_Library.o User Library\Timer_Delay.o User Library\lcd_4bit.o User Library\lcd_8bit.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../stm32_flash.ld -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=GPIO_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\Tools\arm-atollic-reports.jar sizeinfo list GPIO_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6132	    136	   1056	   7324	   1c9c	GPIO_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: GPIO_Driver.list
+Generate listing file done
+Generate build reports done

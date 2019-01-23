@@ -68,15 +68,15 @@ void I2C_data(uint8_t i2c_data)
 
 void I2C_stop()
 {
-	while (!(I2C1->SR1 & I2C_SR1_BTF))
+	while (!(I2C1->SR1 & I2C_SR1_BTF));
 	I2C1->CR1 |= I2C_CR1_STOP;
+
 }
 
 
 void I2C_start()
 {
-
+	//while(I2C1->SR2 & I2C_SR2_BUSY);// Unnecessary
 	I2C1->CR1 |= I2C_CR1_START;
-
 	while(!(I2C1->SR1 & I2C_SR1_SB)); // keep waiting until the SB bit has been set
 }
