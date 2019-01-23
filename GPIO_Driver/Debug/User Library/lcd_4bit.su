@@ -1,0 +1,6 @@
+lcd_4bit.c:10:6:lcd_send_cmd	16	static
+lcd_4bit.c:52:6:lcd_send_data	16	static
+lcd_4bit.c:93:6:lcd_print	24	static
+lcd_4bit.c:107:6:lcd_init	128	static
+lcd_4bit.c:138:6:lcd_clear	8	static
+lcd_4bit.c:148:6:lcd_goto_xy	16	static
