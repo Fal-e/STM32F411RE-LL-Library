@@ -14,7 +14,6 @@
 #include <stdint.h>
 #include <Timer_Delay.h>
 
-
 int Ticks=0;
 
 void config_clock_50MHz(void)

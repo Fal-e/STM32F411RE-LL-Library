@@ -24,5 +24,4 @@ void I2C_data(uint8_t i2c_data);
 
 
 
-
 #endif /* I2C_LIBRARY_H_ */
