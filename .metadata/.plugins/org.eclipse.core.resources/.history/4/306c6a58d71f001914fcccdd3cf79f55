@@ -52,7 +52,7 @@ void I2C_addressWrite(uint8_t i2c_address)
 
 
 	// EV6
-	while(!(I2C1->SR1 & I2C_SR1_ADDR)); // Wait for Received Address matched
+	while(!(I2C1->SR1 & I2C_SR1_ADDR));
 	while(!(I2C1->SR2 & I2C_SR2_BUSY));
 
 }
