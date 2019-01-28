@@ -1,4 +1,4 @@
 core_cm4.h:1626:22:NVIC_EnableIRQ	16	static
-Timer_Delay.c:19:6:config_clock_50MHz	8	static
-Timer_Delay.c:101:6:TIM4_IRQHandler	4	static
-Timer_Delay.c:110:6:delay_mS	16	static
+Timer_Delay.c:23:6:config_clock_50MHz	8	static
+Timer_Delay.c:105:6:TIM4_IRQHandler	4	static
+Timer_Delay.c:114:6:delay_mS	16	static

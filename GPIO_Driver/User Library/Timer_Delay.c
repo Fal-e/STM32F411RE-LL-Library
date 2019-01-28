@@ -14,7 +14,11 @@
 #include <stdint.h>
 #include <Timer_Delay.h>
 
-int Ticks=0;
+int volatile Ticks=0;
+// Declaring as volatile
+// Volatile means that Ticks can change at any time
+// Declaring volatile is needed for global variables changed by interrupted service routines
+// https://www.embedded.com/electronics-blogs/beginner-s-corner/4023801/Introduction-to-the-Volatile-Keyword
 
 void config_clock_50MHz(void)
 {

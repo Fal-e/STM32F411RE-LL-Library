@@ -47,11 +47,25 @@ gpio_port_config(myGPIO,(int []) {5},1);
 I2C_enable();
 
 
-I2C1->CR2 = I2C_CR2_ITERREN;
-NVIC_EnableIRQ(I2C1_ER_IRQn);
+
+
 
 I2C_start();
-I2C1->DR = (0x26<<1) & 0b11111110; //lsb is 0 (Reset), therefore master is in transmitter mode
+I2C_addressWrite(0x27);
+I2C_data(0x38);
+I2C_data(0x32);
+I2C_stop();
+
+delay_mS(10);
+
+
+I2C_start();
+I2C_addressWrite(0x27);
+I2C_data(0x32);
+I2C_data(0x37);
+I2C_stop();
+
+delay_mS(10);
 
 
 // Need to add code that checks for acknowledge. If not acknowledged then skip the code below,
@@ -63,14 +77,9 @@ I2C1->DR = (0x26<<1) & 0b11111110; //lsb is 0 (Reset), therefore master is in tr
 
 
 
-I2C_start();
 
-I2C_addressWrite(0x27);
-I2C_data(0x27);
-I2C_data(0x17);
-I2C_stop();
 
-gpio_write(PORTA,5,1);
+
 // TODO: Code that handles NACK from slave.
 // The program is currently stuck in an infinite loop in the I2C_data command
 // Specifically: while(!(I2C1->SR1 & I2C_SR1_TXE));
@@ -82,17 +91,7 @@ gpio_write(PORTA,5,1);
 }
 
 
-void I2C1_ER_IRQHandler()
-{
-	I2C1->SR1 &= ~I2C_SR1_AF;
-	I2C1->CR1 |= I2C_CR1_STOP;
 
-	//while(I2C1->SR2 & I2C_SR2_BUSY);
-
-	//I2C1->SR1 &= ~I2C_SR1_AF;
-	//I2C1->CR1 |= I2C_CR1_STOP;
-
-}
 
 
 

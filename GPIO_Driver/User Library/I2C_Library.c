@@ -40,9 +40,19 @@ void I2C_enable()
 
 	// Peripheral Enable
 	I2C1->CR1 |= I2C_CR1_PE;
+
+	/* Interrupt Enabled for the I2C1 Error event */
+	I2C1->CR2 = I2C_CR2_ITERREN;
+	NVIC_EnableIRQ(I2C1_ER_IRQn);
+
+
 }
-
-
+/* Interrupt Service Routine for I2C1 Error event*/
+void I2C1_ER_IRQHandler()
+{
+	I2C1->SR1 &= ~I2C_SR1_AF;
+	I2C1->CR1 |= I2C_CR1_STOP;
+}
 
 
 void I2C_addressWrite(uint8_t i2c_address)
@@ -77,4 +87,28 @@ void I2C_start()
 	//while(I2C1->SR2 & I2C_SR2_BUSY);// Unnecessary
 	I2C1->CR1 |= I2C_CR1_START;
 	while(!(I2C1->SR1 & I2C_SR1_SB)); // keep waiting until the SB bit has been set
+}
+
+
+void I2C_scan() // Still much to do. Right now, just stops when an address is found i.e. ACK received
+{
+
+	int i = 0;
+
+
+	while (i<127){
+
+
+		if (!(I2C1->SR1 & I2C_SR1_ADDR)) {
+			I2C_start();
+			I2C1->DR = (i<<1) & 0b11111110; //lsb is 0 (Reset), therefore master is in transmitter mode
+			i++;
+		}
+
+
+
+	}
+
+	I2C1->CR1 |= I2C_CR1_STOP;
+
 }

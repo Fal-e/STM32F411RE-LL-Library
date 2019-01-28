@@ -17,6 +17,8 @@ void I2C_addressWrite(uint8_t i2c_address);
 void I2C_start();
 void I2C_stop();
 void I2C_data(uint8_t i2c_data);
+void I2C_scan();
+void I2C1_ER_IRQHandler();
 
 
 
