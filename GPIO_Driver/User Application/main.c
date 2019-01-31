@@ -20,7 +20,8 @@
 **===========================================================================
 */
 
-
+void sendCmd(uint8_t cmd);
+void sendData(char data);
 
 int main(void)
 {
@@ -47,25 +48,29 @@ gpio_port_config(myGPIO,(int []) {5},1);
 I2C_enable();
 
 
+// Read data sheet for the GPIO expander in STM32 folder.
+// The first data bit sent to the GPIO expander is whether it is input/output etc.
 
 
+sendCmd(0x33);
+delay_mS(5);
+sendCmd(0x32);
+delay_mS(5);
+sendCmd(0x28);
+delay_mS(5);
+sendCmd(0x0E);
+delay_mS(5);
+sendCmd(0x01);
+delay_mS(5);
+sendCmd(0x80);
 
-I2C_start();
-I2C_addressWrite(0x27);
-I2C_data(0x38);
-I2C_data(0x32);
-I2C_stop();
 
-delay_mS(10);
+sendData(83);
+sendData(85);
+sendData(65);
+sendData(68);
 
 
-I2C_start();
-I2C_addressWrite(0x27);
-I2C_data(0x32);
-I2C_data(0x37);
-I2C_stop();
-
-delay_mS(10);
 
 
 // Need to add code that checks for acknowledge. If not acknowledged then skip the code below,
@@ -92,10 +97,37 @@ delay_mS(10);
 
 
 
+void sendCmd(uint8_t cmd)
+{
+
+I2C_start();
+I2C_addressWrite(0x27); //hard coded address for testing purposes
+// upper nibble
+I2C_data((cmd&0xF0)|0b1100); //0x0C  is 1 1 0 0. i.e. enable 1
+I2C_data((cmd&0xF0)|0b1000); //0x08  is 1 0 0 0 i.e. enable 0
+// lower nibble
+I2C_data(((cmd<<4)&0xF0)|0b1100);
+I2C_data(((cmd<<4)&0xF0)|0b1000);
+I2C_stop();
+
+}
 
 
+void sendData(char data)
+{
 
+I2C_start();
+I2C_addressWrite(0x27); //hard coded for testing purposes
+//									       EN RW RS    P3 is the backlight. P3 =1, backlight is on
+// upper nibble				  //		P3 P2 P1 P0
+I2C_data((data&0xF0)|0b1101); //0x0C is  1  1  0  0. i.e. enable 1 RS=1
+I2C_data((data&0xF0)|0b1001); //0x08  is 1 0 0 0 i.e. enable 0 RS=1
+// lower nibble
+I2C_data(((data<<4)&0xF0)|0b1101);
+I2C_data(((data<<4)&0xF0)|0b1001);
+I2C_stop();
 
+}
 
 
 

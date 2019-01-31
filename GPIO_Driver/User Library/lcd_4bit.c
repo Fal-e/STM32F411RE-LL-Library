@@ -7,6 +7,23 @@
 #include "lcd_4bit.h"
 // Get the other includes from the lcd_4bit that are needed such as GPIO_Driver and Timer_Delay
 
+
+// TODO
+/*
+ * PINOUT
+ *
+ * D7 D6 D5 D4 X  EN RW RS
+ * P7 P6 P5 P4 P3 P2 P1 P0
+ *
+ * The I2C backpack is run in 4-bit mode
+ * Therefore the high nibble is sent first and then the
+ *
+ */
+
+
+
+
+
 void lcd_send_cmd(uint32_t command) // Send a command to the LCD. e.g. display on cursor on etc.
 {
 	gpio_port_clear(LCD_PORT_DATA,0xFFFF); //clear the GPIOA before sending the new command
