@@ -7,47 +7,87 @@
 
 #include "lcd_i2c.h"
 
-/*
-
-void lcd_send_cmd(uint32_t command) // Send a command to the LCD. e.g. display on cursor on etc.
+void lcd_i2c_sendCmd(uint8_t cmd)
 {
-	gpio_port_clear(LCD_PORT_DATA,0xFFFF); //clear the GPIOA before sending the new command
-	// maybe update this to only clear the pins that are being used, and not the whole port.
+
+I2C_start();
+I2C_addressWrite(0x27); //hard coded address for testing purposes
+// upper nibble
+I2C_data((cmd&0xF0)|0b1100); //0x0C  is 1 1 0 0. i.e. enable 1
+I2C_data((cmd&0xF0)|0b1000); //0x08  is 1 0 0 0 i.e. enable 0
+// lower nibble
+I2C_data(((cmd<<4)&0xF0)|0b1100);
+I2C_data(((cmd<<4)&0xF0)|0b1000);
+I2C_stop();
+
+}
 
 
+void lcd_i2c_sendData(char data)
+{
 
-	gpio_write(LCD_PORT_CTRL,RS,0);
-	gpio_write(LCD_PORT_CTRL,RW,0);
+I2C_start();
+I2C_addressWrite(0x27); //hard coded for testing purposes
+//									       EN RW RS    P3 is the backlight. P3 =1, backlight is on
+// upper nibble				  //		P3 P2 P1 P0
+I2C_data((data&0xF0)|0b1101); //0x0C is  1  1  0  0. i.e. enable 1 RS=1
+I2C_data((data&0xF0)|0b1001); //0x08  is 1 0 0 0 i.e. enable 0 RS=1
+// lower nibble
+I2C_data(((data<<4)&0xF0)|0b1101);
+I2C_data(((data<<4)&0xF0)|0b1001);
+I2C_stop();
 
-
-
-	// High nibble gets sent first
-	LCD_PORT_DATA->BSRR = (0b00010000 & command)<<(D4-4);
-	LCD_PORT_DATA->BSRR = (0b00100000 & command)<<(D5-5);
-	LCD_PORT_DATA->BSRR = (0b01000000 & command)<<(D6-6);
-	LCD_PORT_DATA->BSRR = (0b10000000 & command)<<(D7-7);
-
-	// Send the high nibble, by doing a high to low pulse on the enable pin
-	gpio_write(LCD_PORT_CTRL,EN,1);
-	delay_mS(5);
-	gpio_write(LCD_PORT_CTRL,EN,0);
-	delay_mS(5);
+}
 
 
-	gpio_port_clear(LCD_PORT_DATA,0xFFFF);
+void lcd_i2c_print(char string[]) //  doing char myArray = "hello" creates an array of characters
+// char *string is equivalent to string[]
+{
+	int length = strlen(string); // We are passing the array to find the length of the string. Remember string[0] will return first  element and so on ...
 
-	// Low nibble gets sent after high nibble
-	LCD_PORT_DATA->BSRR = (0b00000001 & command)<<(D4);
-	LCD_PORT_DATA->BSRR = (0b00000010 & command)<<(D5-1); // because you start at bit 0.
-	LCD_PORT_DATA->BSRR = (0b00000100 & command)<<(D6-2); // e.g. D5 is PA7. 7-1 = 6.
-	LCD_PORT_DATA->BSRR = (0b00001000 & command)<<(D7-3); // Therefore the bit needs to be shifted 6 times.
-
-	gpio_write(LCD_PORT_CTRL,EN,1);
-	delay_mS(5);
-	gpio_write(LCD_PORT_CTRL,EN,0);
-	delay_mS(5);
+	for (int i =0; i<length; i++)
+	{
+		lcd_i2c_sendData(string[i]); //
+	}
 
 
 }
 
-*/
+void lcd_i2c_init()
+{
+	lcd_i2c_sendCmd(0x33);
+	delay_mS(5);
+	lcd_i2c_sendCmd(0x32);
+	delay_mS(5);
+	lcd_i2c_sendCmd(0x28);
+	delay_mS(5);
+	lcd_i2c_sendCmd(0x0E);
+	delay_mS(5);
+	lcd_i2c_sendCmd(0x01);
+	delay_mS(5);
+	lcd_i2c_sendCmd(0x80);
+}
+
+void lcd_i2c_clear()
+{
+	lcd_i2c_sendCmd(0x01);
+	delay_mS(10); // Added delay because some LCD commands would not work
+}
+
+
+
+void lcd_i2c_goto_xy(int x, int y) // need to expand this for 2004a lcd
+{
+	if (y==1) // First row
+	{
+		lcd_i2c_sendCmd(0x80+x-1); // Minus 1, so you can write 1,1 for 1st row 1st column and not 0,1.
+	}
+
+	else // Second Row. This only works for 16x2. Need to change for 20 x 4 lcd sometime
+	{
+		lcd_i2c_sendCmd(0xC0+x-1);
+	}
+
+
+
+}

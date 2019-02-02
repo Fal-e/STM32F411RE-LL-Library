@@ -1,3 +1,1 @@
-main.c:26:5:main	72	static
-main.c:100:6:sendCmd	16	static
-main.c:116:6:sendData	16	static
+main.c:26:5:main	80	static

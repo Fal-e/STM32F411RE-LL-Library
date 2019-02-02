@@ -17,6 +17,14 @@
 
 
 
+void lcd_i2c_sendCmd(uint8_t cmd);
+void lcd_i2c_sendData(char data);
+void lcd_i2c_print(char string[]);
+void lcd_i2c_init();
+void lcd_i2c_clear();
+void lcd_i2c_goto_xy(int x, int y);
+
+
 
 
 #endif /* LCD_I2C_H_ */
