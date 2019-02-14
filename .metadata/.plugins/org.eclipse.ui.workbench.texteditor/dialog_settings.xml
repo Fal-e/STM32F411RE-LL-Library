@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="PULL" key="selection"/>
+		<item value="ADC_SQR1_L_2" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="ADC_SQR1_L_2"/>
 			<item value="PULL"/>
 			<item value="open"/>
 			<item value="drain"/>
@@ -15,7 +16,6 @@
 			<item value="error interrupt"/>
 			<item value="TIM4_IRQHandler"/>
 			<item value="iterren"/>
-			<item value="I2C1_ER_IRQ"/>
 		</list>
 		<list key="replacehistory">
 		</list>

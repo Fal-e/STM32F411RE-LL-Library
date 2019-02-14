@@ -7,6 +7,8 @@
 #include "lcd_4bit.h"
 #include "I2C_Library.h"
 #include "lcd_i2c.h"
+#include <stdlib.h>
+
 
 /* Private macro */
 /* Private variables */
@@ -35,18 +37,17 @@ lcd_print("Shahini");
 //delay_mS(2000);
 */
 
-config_clock_50MHz();
+ config_clock_50MHz();
 
 
 GPIO_TYPE myGPIO;
-myGPIO.port = PORTA;
-myGPIO.mode = OUTPUT_MODE;
-myGPIO.mode_type = OUTPUT_PUP;
-gpio_port_config(myGPIO,(int []) {5},1);
+myGPIO.port = PORTC;
+myGPIO.mode = ANALOG_MODE;
+gpio_port_config(myGPIO,(int []) {0},1);
 
 
 I2C_enable();
-
+lcd_i2c_clear();
 
 // Read data sheet for the GPIO expander in STM32 folder.
 // The first data bit sent to the GPIO expander is whether it is input/output etc.
@@ -56,7 +57,7 @@ lcd_i2c_init();
 
 
 
-for (int i = 0; i < 50; i++) {
+/*for (int i = 0; i < 50; i++) {
 	lcd_i2c_print("Suad");
 	delay_mS(250);
 	lcd_i2c_clear();
@@ -67,6 +68,43 @@ for (int i = 0; i < 50; i++) {
 	lcd_i2c_clear();
 
 }
+*/
+
+
+char str[16]; // Temporary placement
+
+
+RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
+ADC1->SQR1 |= ADC_SQR1_L_0; // One conversion ->  0001. 1111
+ADC1->SQR3 |= ADC_SQR3_SQ1_1 | ADC_SQR3_SQ1_3; // 2 or 10, gives us 1100 which is 10. We want
+ADC1->CR2 |= ADC_CR2_CONT; // continous mode
+ADC1->CR2 |= ADC_CR2_ADON;
+// maybe put a check that adon is 1
+ADC1->CR2 |= ADC_CR2_SWSTART; // Continous Conversion Mode
+
+while(1){
+int result = ADC1->DR;
+itoa(result, str, 10); // convert from integer to string
+lcd_i2c_print(str);
+delay_mS(1000);
+lcd_i2c_clear();
+}
+
+// ADC on/off
+// ADON in ADC_CR2 register.
+
+// Conversion start
+// SWSTART or JSWSTART is set
+
+// Conversion stop clear ADON bit
+
+// ADCLK is generated from APB2 clock. Ours is 50 MHz.
+// Programmable prescalar allowed e.g. /2 /2 /6 /8
+
+
+// We want to read the temperature and display it on the LCD.
+
+
 
 // Need to add code that checks for acknowledge. If not acknowledged then skip the code below,
 // otherwise run it.
@@ -89,6 +127,7 @@ for (int i = 0; i < 50; i++) {
 
 //
 }
+
 
 
 

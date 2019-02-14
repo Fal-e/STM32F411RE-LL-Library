@@ -10648,3 +10648,683 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@426be8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
 !SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-03 00:47:06.050
 !MESSAGE Connection is shut down
+!SESSION 2019-02-14 00:28:29.185 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-02-14 00:28:30.087
+!MESSAGE Loading product manager
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-02-14 00:28:30.093
+!MESSAGE OS info: Windows 7, 6.1, x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-02-14 00:28:30.196
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY TrueSTUDIO 1 0 2019-02-14 00:28:32.323
+!MESSAGE Target: STM32, Version: 9.1.0, Build date: 20181011-1241, Installation dir: /C:/Program Files (x86)/Atollic/TrueSTUDIO for STM32 9.1.0/ide/
+
+!ENTRY TrueSTUDIO 1 0 2019-02-14 00:28:32.324
+!MESSAGE Workspace: C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1
+
+!ENTRY org.eclipse.jface 2 0 2019-02-14 00:28:33.360
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-14 00:28:33.360
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1793f15,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ec7eb5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.atollic.truestudio.integration.processorexpert 0 0 2019-02-14 00:28:36.420
+!MESSAGE Atollic TrueSTUDIO Processor Expert integration is up.
+
+!ENTRY edu.hawaii.ics.csdl.jupiter 1 0 2019-02-14 00:28:36.444
+!MESSAGE Code Review is up.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-02-14 00:28:36.543
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Falcon'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 00:29:51.280
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 00:29:51.319
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY com.atollic.hardwaredebug.launch 2 0 2019-02-14 00:31:46.433
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 00:31:52.928
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 00:31:52.956
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 00:32:15.081
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 00:32:15.111
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY com.atollic.hardwaredebug.launch 2 0 2019-02-14 00:33:09.962
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 00:33:14.329
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 00:33:14.350
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY com.atollic.hardwaredebug.launch 2 0 2019-02-14 00:34:40.626
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 00:35:45.023
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 00:35:45.051
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY com.atollic.hardwaredebug.launch 2 0 2019-02-14 00:37:11.344
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 01:25:39.895
+!MESSAGE Failed to execute MI command:
+target extended-remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: The system tried to join a drive to a directory on a joined drive.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 01:26:06.772
+!MESSAGE Failed to execute MI command:
+target extended-remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: The system tried to join a drive to a directory on a joined drive.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 01:26:20.820
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 01:26:20.847
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 01:26:31.003
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 01:26:31.031
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 01:27:09.109
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 01:27:09.136
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 01:27:15.819
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 01:27:15.851
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 01:35:53.791
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 01:35:53.813
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 01:35:58.897
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 01:35:58.924
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 01:42:35.064
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 01:42:35.091
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY TrueSTUDIO 4 0 2019-02-14 02:10:36.420
+!MESSAGE ST-LINK GDB server failed to start (exit code = 2)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2019-02-14 02:10:36.591
+!MESSAGE Error in initializing ST-Link device.
+Reason: (2) ST-Link DLL error.
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-02-14 02:15:17.380
+!MESSAGE Unloading product manager
+!SESSION 2019-02-14 21:43:54.013 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-02-14 21:43:57.972
+!MESSAGE Loading product manager
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-02-14 21:43:58.011
+!MESSAGE OS info: Windows 7, 6.1, x86
+
+!ENTRY TrueSTUDIO 1 0 2019-02-14 21:44:06.368
+!MESSAGE Target: STM32, Version: 9.1.0, Build date: 20181011-1241, Installation dir: /C:/Program Files (x86)/Atollic/TrueSTUDIO for STM32 9.1.0/ide/
+
+!ENTRY TrueSTUDIO 1 0 2019-02-14 21:44:06.369
+!MESSAGE Workspace: C:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1
+
+!ENTRY org.eclipse.jface 2 0 2019-02-14 21:44:10.201
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-14 21:44:10.201
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@16f81b5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1552aa2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.atollic.truestudio.integration.processorexpert 0 0 2019-02-14 21:44:18.093
+!MESSAGE Atollic TrueSTUDIO Processor Expert integration is up.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-02-14 21:44:18.319
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Falcon'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.hawaii.ics.csdl.jupiter 1 0 2019-02-14 21:44:18.496
+!MESSAGE Code Review is up.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.950
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@7f51a8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.950
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.950
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@17cae17): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.950
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.951
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1774202): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.951
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.951
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@157b295): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.951
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.951
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@8db9ac): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.951
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.951
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@a9a2bc): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.951
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.952
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1ed93f9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.952
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.952
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1d84a0b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.952
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.952
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@fdcdc5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.952
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.952
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@12c2124): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.952
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.953
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@311723): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.953
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.953
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@18e9f7c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.953
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.953
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@163fded): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.953
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.953
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1dac2a4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.953
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.954
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1484d73): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.954
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.954
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@ec4cd9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.954
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.954
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@a4443c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.954
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.955
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1fa606e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.955
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.955
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@c68df7): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.955
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.955
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@a29b72): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.955
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.956
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@4dbffe): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.956
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 22:07:14.956
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@be5ec9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 22:07:14.956
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.714
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@b94f37): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.714
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.714
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@184d7cc): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.714
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.714
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@d18e65): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.714
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.715
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@3a9082): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.715
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.715
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@42a9c5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.715
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.715
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1df3d36): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.715
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.715
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@12d348e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.715
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.716
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1330de9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.716
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.716
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@e693cb): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.716
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.716
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@42202c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.716
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.717
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@99f7ee): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.717
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.717
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1c6fe11): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.717
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.717
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1c85d29): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.717
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.718
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@4a40bc): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.718
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.718
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@121e71c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.718
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.718
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1a1a81f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.718
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.719
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@358597): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.719
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.719
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@1e658d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.719
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.719
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@737815): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.719
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:02:07.719
+!MESSAGE Request for monitor: 'RequestMonitor (com.atollic.truestudio.sfrview.ui.SfrView$4@52c454): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-02-14 23:02:07.719
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.321
+!MESSAGE Request for monitor: '111^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.321
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012000 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.373
+!MESSAGE Request for monitor: '112^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.374
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012004 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.374
+!MESSAGE Request for monitor: '113^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.374
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012008 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.375
+!MESSAGE Request for monitor: '114^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.375
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x4001200c x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.458
+!MESSAGE Request for monitor: '115^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.459
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012010 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.459
+!MESSAGE Request for monitor: '116^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.459
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012014 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.460
+!MESSAGE Request for monitor: '117^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.460
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012018 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.460
+!MESSAGE Request for monitor: '118^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.460
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x4001201c x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.461
+!MESSAGE Request for monitor: '119^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.461
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012020 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.461
+!MESSAGE Request for monitor: '120^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.461
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012024 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.462
+!MESSAGE Request for monitor: '121^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.462
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012028 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.462
+!MESSAGE Request for monitor: '122^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.462
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x4001202c x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.463
+!MESSAGE Request for monitor: '123^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.463
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012030 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.463
+!MESSAGE Request for monitor: '124^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.463
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012034 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.464
+!MESSAGE Request for monitor: '125^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.464
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012038 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.464
+!MESSAGE Request for monitor: '126^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.464
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x4001203c x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.465
+!MESSAGE Request for monitor: '127^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.465
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012040 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.465
+!MESSAGE Request for monitor: '128^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.465
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012044 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.466
+!MESSAGE Request for monitor: '129^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.466
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x40012048 x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-02-14 23:22:02.466
+!MESSAGE Request for monitor: '130^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-02-14 23:22:02.466
+!MESSAGE Failed to execute MI command:
+-data-read-memory 0x4001204c x 1 1 4 y
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-02-15 01:43:35.739
+!MESSAGE Unloading product manager

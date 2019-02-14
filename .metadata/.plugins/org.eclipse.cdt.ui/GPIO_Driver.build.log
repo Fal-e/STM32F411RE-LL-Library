@@ -1,4 +1,4 @@
-00:56:29 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+01:01:39 **** Incremental Build of configuration Debug for project GPIO_Driver ****
 Info: Internal Builder is used for build
 arm-atollic-eabi-gcc -c ..\User Application\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F411xE -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver -IC:\Users\Falcon\Atollic\TrueSTUDIO\STM32_workspace_9.1\GPIO_Driver\User Library -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o User Application\main.o 
 In file included from ..\User Application\main.c:4:0:
@@ -10,12 +10,12 @@ C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.1.0\ide\jre\bin\java -jar 
 Generate build reports...
 Print size information
    text	   data	    bss	    dec	    hex	filename
-   6796	    136	   1056	   7988	   1f34	GPIO_Driver.elf
+   6988	    136	   1056	   8180	   1ff4	GPIO_Driver.elf
 Print size information done
 Generate listing file
 Output sent to: GPIO_Driver.list
 Generate listing file done
 Generate build reports done
 
-00:56:30 Build Finished (took 424ms)
+01:01:39 Build Finished (took 418ms)
 
