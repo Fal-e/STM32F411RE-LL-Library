@@ -2,29 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ADC_SQR1_L_2" key="selection"/>
+		<item value="Return" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="ADC_SQR1_L_2"/>
-			<item value="PULL"/>
-			<item value="open"/>
-			<item value="drain"/>
-			<item value="busy"/>
-			<item value="error interrupt"/>
-			<item value="TIM4_IRQHandler"/>
-			<item value="iterren"/>
+			<item value="return"/>
+			<item value="ext"/>
+			<item value="tim2"/>
+			<item value="tim4"/>
+			<item value="startup"/>
+			<item value="stm32f1"/>
+			<item value="stm32"/>
+			<item value="start"/>
 		</list>
 		<list key="replacehistory">
+			<item value=" (1"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="263" key="DIALOG_WIDTH"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
-		<item value="367" key="DIALOG_HEIGHT"/>
-		<item value="683" key="DIALOG_X_ORIGIN"/>
-		<item value="137" key="DIALOG_Y_ORIGIN"/>
+		<item value="377" key="DIALOG_HEIGHT"/>
+		<item value="47" key="DIALOG_X_ORIGIN"/>
+		<item value="226" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

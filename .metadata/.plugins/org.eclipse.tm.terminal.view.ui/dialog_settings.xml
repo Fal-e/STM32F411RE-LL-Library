@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="LaunchTerminalSettingsDialog">
 		<section name="SettingsPanelControl">
+			<section name="Git Bash">
+			</section>
 			<section name="Local Terminal">
 			</section>
 		</section>

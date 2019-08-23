@@ -1,8 +1,10 @@
 core_cm4.h:1626:22:NVIC_EnableIRQ	16	static
 I2C_Library.c:11:6:I2C_enable	88	static
-I2C_Library.c:51:6:I2C1_ER_IRQHandler	4	static
-I2C_Library.c:58:6:I2C_addressWrite	16	static
-I2C_Library.c:70:6:I2C_data	16	static
-I2C_Library.c:77:6:I2C_stop	4	static
-I2C_Library.c:85:6:I2C_start	4	static
-I2C_Library.c:93:6:I2C_scan	16	static
+I2C_Library.c:48:6:I2C1_ER_IRQHandler	4	static
+I2C_Library.c:54:6:I2C_addressWrite	16	static
+I2C_Library.c:63:6:I2C_addressRead	16	static
+I2C_Library.c:71:6:I2C_data	16	static
+I2C_Library.c:76:9:I2C_dataRead	4	static
+I2C_Library.c:82:6:I2C_stop	4	static
+I2C_Library.c:88:6:I2C_start	4	static
+I2C_Library.c:95:6:I2C_scan	16	static

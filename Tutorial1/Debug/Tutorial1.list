@@ -122,6 +122,8 @@ int main(void)
  800021a:	4b0f      	ldr	r3, [pc, #60]	; (8000258 <main+0x80>)
  800021c:	2220      	movs	r2, #32
  800021e:	619a      	str	r2, [r3, #24]
+		//GPIOA->BSRR = 0b100000;   can also use this.
+
 		for(int i=0; i<500000; i++); // wait some time. Basically a delay
  8000220:	2300      	movs	r3, #0
  8000222:	607b      	str	r3, [r7, #4]

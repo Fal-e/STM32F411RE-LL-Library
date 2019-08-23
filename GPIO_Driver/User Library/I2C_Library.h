@@ -20,6 +20,9 @@ void I2C_data(uint8_t i2c_data);
 void I2C_scan();
 void I2C1_ER_IRQHandler();
 
+uint8_t I2C_dataRead(void);
+void I2C_data(uint8_t i2c_data);
+void I2C_addressRead(uint8_t i2c_address);
 
 
 

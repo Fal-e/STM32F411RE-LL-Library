@@ -1,0 +1,140 @@
+/*
+ * ss_delay.c
+ *
+ *  Created on: 4May,2019
+ *      Author: Falcon
+ */
+
+#include <stdint.h>
+#include "ss_delay.h"
+#include "stm32f10x.h"
+#include "stm32f10x_rcc.h"
+
+
+
+
+
+
+
+
+void config_clock_72MHz(void)
+
+{
+	// Set PLL multiplication factor to 9.
+
+
+
+
+	// Select HSE as PLL source
+	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_PLLSRC) | RCC_CFGR_PLLSRC_HSE;
+
+	// External Freq undivided
+	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_PLLXTPRE) | RCC_CFGR_PLLXTPRE_HSE;
+
+
+
+	RCC->CR |= RCC_CR_HSEON;
+	while(!(RCC_CR_HSERDY));
+
+	//RCC->CFGR &= ~(1<<1);
+	//RCC->CFGR |= RCC_CFGR_SW_HSE;
+	//while ((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_HSE)
+
+
+	//RCC->CFGR |= RCC_CFGR_SW_PLL; // Select PLL as SYSCLK
+	//while(!(RCC->CFGR & RCC_CFGR_SWS_PLL)); // Wait for PLL to be ready
+
+
+
+
+	FLASH->ACR |= FLASH_ACR_PRFTBE; // Prefetch Buffer enable
+		FLASH->ACR |= FLASH_ACR_LATENCY_2; // Two wait states since 48 MHz < SYSCLK <= 72 MHz
+		while(!(FLASH->ACR & FLASH_ACR_PRFTBS)); // Wait until prefetch buffer enabled (Reading ACR register)
+
+
+	// Enable PLL oscillator
+	RCC->CR &= ~RCC_CR_PLLON;
+	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_PLLMULL) | RCC_CFGR_PLLMULL9;
+	RCC->CR |= RCC_CR_PLLON;
+	while(!(RCC->CR & RCC_CR_PLLRDY));
+
+
+	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_SW) | RCC_CFGR_SW_PLL;
+
+
+
+	uint8_t test = RCC_GetSYSCLKSource();
+
+	//RCC->CFGR |= RCC_CFGR_PLLSRC_HSE;
+	//RCC->CR &= ~RCC_CR_HSION;
+	//RCC->CFGR |= RCC_CFGR_PLLMULL9; // x9 baybayyyy
+	//RCC->CFGR |= RCC_CFGR_PPRE1_DIV2;
+	//RCC->CR |= RCC_CR_PLLON;
+
+
+
+
+	/* Select PLL as system Clock */
+	//RCC->CFGR &= ~RCC_CFGR_SW;            /* Clear */
+	//RCC->CFGR |=  RCC_CFGR_SW_PLL;    /* Set   */
+
+	/* Wait for PLL to become system core clock */
+	//while ((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_PLL);
+
+}
+
+
+void config_clock_50MHz(void)
+{
+	/* Enable HSI */
+	RCC->CR |= ((uint32_t)RCC_CR_HSION);
+
+	/* Wait for HSI to be ready */
+	while ((RCC->CR & RCC_CR_HSIRDY) == 0){
+	  // Nop
+	}
+
+	/* Set HSI as the System Clock */
+	RCC->CFGR = RCC_CFGR_SW_HSI;
+
+	/* Wait for HSI to be used for the system clock */
+	while ((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_HSI){
+	 // Nop
+	}
+
+	// some shit here //
+	FLASH->ACR |= FLASH_ACR_PRFTBE;                          // Enable Prefetch Buffer
+	FLASH->ACR |= FLASH_ACR_LATENCY_2;                         // Flash 1 wait state
+
+	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_PLLMULL) | RCC_CFGR_PLLMULL9;
+
+	// HCLK is now 50 MHz
+
+
+
+	// the commented out apb1 apb2 means not divided.
+
+	/* Enable PLL */
+	 RCC->CR &= ~RCC_CR_PLLON;       /* Disable PLL */
+	 RCC->CR |= RCC_CR_PLLON;        /* Enable PLL     */
+
+	   /* Wait until the PLL is ready */
+	 while((RCC->CR & RCC_CR_PLLRDY) == 0){
+	       //Nop
+	   }
+
+	   /* Select PLL as system Clock */
+	 RCC->CFGR &= ~RCC_CFGR_SW;            /* Clear */
+	 RCC->CFGR |=  RCC_CFGR_SW_PLL;    /* Set   */
+
+	   /* Wait for PLL to become system core clock */
+	 while ((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_PLL){
+	       //Nop
+	   }
+
+}
+
+
+
+
+

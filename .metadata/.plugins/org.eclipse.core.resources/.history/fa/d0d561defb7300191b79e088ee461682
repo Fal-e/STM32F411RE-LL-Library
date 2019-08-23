@@ -1,0 +1,10 @@
+/*
+ * ss_mpu6050.c
+ *
+ *  Created on: 11May,2019
+ *      Author: Falcon
+ */
+#include "ss_mpu6050.h"
+#include "I2C_Library.h"
+
+

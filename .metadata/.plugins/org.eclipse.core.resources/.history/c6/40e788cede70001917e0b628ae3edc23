@@ -1,0 +1,18 @@
+/*
+ * ss_delay.h
+ *
+ *  Created on: 4May,2019
+ *      Author: Falcon
+ */
+
+#ifndef SS_DELAY_H_
+#define SS_DELAY_H_
+
+
+void config_clock_72MHz(void);
+void st_config_clock_72MHz(void);
+void RCC_Configuration(void);
+void config_clock_50MHz(void);
+void SysClkSetHSI_4xPLLMul (uint32_t PLLMul);
+
+#endif /* SS_DELAY_H_ */

@@ -2,6 +2,13 @@
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
 	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.cdt.ui.wizards.NewCWizard2" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+			<item value="org.eclipse.team.svn.ui.repository"/>
+		</list>
+	</section>
 	<section name="ChooseWorkspaceDialogSettings">
 		<item value="328" key="DIALOG_X_ORIGIN"/>
 		<item value="331" key="DIALOG_Y_ORIGIN"/>

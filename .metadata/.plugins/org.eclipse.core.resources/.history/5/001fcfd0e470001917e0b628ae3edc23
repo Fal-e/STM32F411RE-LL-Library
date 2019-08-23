@@ -1,0 +1,129 @@
+/*
+ * ss_delay.c
+ *
+ *  Created on: 4May,2019
+ *      Author: Falcon
+ */
+
+#include <stdint.h>
+#include "ss_delay.h"
+#include "stm32f10x.h"
+#include "stm32f10x_rcc.h"
+
+
+
+int volatile Ticks=0;
+
+
+
+
+void config_clock_72MHz(void)
+
+{
+	// Set PLL multiplication factor to 9.
+
+	RCC_DeInit();
+
+	uint8_t TEST2 = RCC_GetSYSCLKSource();
+
+
+	RCC->CR |= RCC_CR_HSEON;
+	while(!(RCC_CR_HSERDY));
+
+
+	// Select HSE as PLL source
+	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_PLLSRC) | RCC_CFGR_PLLSRC_HSE;
+
+
+
+
+
+
+
+	//RCC->CFGR &= ~(1<<1);
+	//RCC->CFGR |= RCC_CFGR_SW_HSE;
+	//while ((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_HSE)
+
+
+	//RCC->CFGR |= RCC_CFGR_SW_PLL; // Select PLL as SYSCLK
+	//while(!(RCC->CFGR & RCC_CFGR_SWS_PLL)); // Wait for PLL to be ready
+
+
+
+
+	FLASH->ACR |= FLASH_ACR_PRFTBE; // Prefetch Buffer enable
+		FLASH->ACR |= FLASH_ACR_LATENCY_2; // Two wait states since 48 MHz < SYSCLK <= 72 MHz
+		while(!(FLASH->ACR & FLASH_ACR_PRFTBS)); // Wait until prefetch buffer enabled (Reading ACR register)
+
+
+	// Enable PLL oscillator
+		RCC_PLLCmd(DISABLE);
+	//RCC->CR = (RCC->CR) && ~RCC_CR_PLLON;
+	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_PLLMULL) | RCC_CFGR_PLLMULL9;
+	// External Freq undivided
+	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_PLLXTPRE) | RCC_CFGR_PLLXTPRE_HSE;
+	RCC->CFGR |= RCC_CFGR_PPRE1_DIV16;
+
+
+
+
+	RCC->CR |= RCC_CR_PLLON;
+	//while(!(RCC->CR & RCC_CR_PLLRDY));
+
+
+	RCC->CFGR = (RCC->CFGR & ~RCC_CFGR_SW) | RCC_CFGR_SW_PLL;
+
+
+
+	uint8_t test = RCC_GetSYSCLKSource();
+
+	//RCC->CFGR |= RCC_CFGR_PLLSRC_HSE;
+	//RCC->CR &= ~RCC_CR_HSION;
+	//RCC->CFGR |= RCC_CFGR_PLLMULL9; // x9 baybayyyy
+	//RCC->CFGR |= RCC_CFGR_PPRE1_DIV2;
+	//RCC->CR |= RCC_CR_PLLON;
+
+
+
+
+	/* Select PLL as system Clock */
+	//RCC->CFGR &= ~RCC_CFGR_SW;            /* Clear */
+	//RCC->CFGR |=  RCC_CFGR_SW_PLL;    /* Set   */
+
+	/* Wait for PLL to become system core clock */
+	//while ((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_PLL);
+
+}
+
+void timer_enable(void)
+{
+	RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;
+	TIM2->PSC = 8;
+	TIM2->ARR = 1000;
+	TIM2->CR1 &= ~TIM_CR1_DIR;
+
+	NVIC_SetPriority(TIM2_IRQn, 0x03);
+	NVIC_EnableIRQ(TIM2_IRQn);
+
+}
+
+void TIM2_IRQHandler()
+{
+	Ticks++;
+	TIM2->SR &= ~TIM_SR_UIF; // cleared update interrupt
+
+}
+
+void delay_mS(uint32_t mS)
+{
+		TIM2->CR1 |= TIM_CR1_CEN;
+		Ticks = 0;
+
+		while(Ticks<mS);
+
+		TIM2->CR1 &= ~TIM_CR1_CEN;
+
+}
+
+
+
