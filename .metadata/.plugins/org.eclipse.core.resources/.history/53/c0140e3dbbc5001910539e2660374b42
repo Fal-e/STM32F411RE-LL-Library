@@ -74,15 +74,16 @@ int main(void) {
     // Setting up ADC and printing it to the LCD via I2C
     RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
     ADC1->SQR1 |= ADC_SQR1_L_0; // One conversion ->  0001. 1111
-    ADC1->SQR3 |= ADC_SQR3_SQ1_1 | ADC_SQR3_SQ1_3; // 2 or 10, gives us 1100 which is 10.
+    ADC1->SQR3 |= ADC_SQR3_SQ1_1 | ADC_SQR3_SQ1_3; // 2 or 10, gives us 1100 which is 10. We want
     ADC1->CR2 |= ADC_CR2_CONT; // continous mode
     ADC1->CR2 |= ADC_CR2_ADON;
-    ADC1->CR2 |= ADC_CR2_SWSTART;
+    // maybe put a check that adon is 1
+    ADC1->CR2 |= ADC_CR2_SWSTART; // Continous Conversion Mode
 
     while(1) {
         int result = ADC1->DR;
         float new_result = result/819.0f;
-        snprintf(str,6,"%f", new_result);
+        snprintf(str,6,"%f", new_result); //snprintf not supported in c99...?
         //ftoa(new_result, 3, str);
         //itoa(result, str, 10); // convert from integer to string
         lcd_i2c_print("Voltage: ");
