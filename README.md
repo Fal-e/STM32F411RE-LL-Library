@@ -1,7 +1,7 @@
 # STM32F411RE-LL-Library
 Simple Low Level Library for STM32F411RE Microcontroller
 
-Developed a library for the STM32F411RE microcontroller which contains functions for: GPIO, I2C, Timer (delay function), LCD 4 bit, 8 bit and LCD I2C
+Developed a library for the STM32F411RE microcontroller which contains functions for: GPIO, I2C, Timer (delay function), LCD 4 bit, 8 bit and LCD I2C. The libraries were by bare-metal programming.
     
    To see the custom libraries:
    Open GPIO_Driver folder -> Open "User Library" folder
