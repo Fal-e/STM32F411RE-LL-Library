@@ -87,7 +87,7 @@ Needs verification:
 - Building with Atollic TrueSTUDIO 9.1.0 or a compatible Eclipse-based setup.
 - Building with `arm-none-eabi-gcc` from the command line.
 
-A reproducible command-line build system is planned but is not yet present.
+Detailed import notes are in [docs/BUILDING.md](docs/BUILDING.md). A reproducible command-line build system is planned but is not yet present.
 
 ## Example Summary
 
