@@ -1,0 +1,112 @@
+name: Bug report
+description: Report a problem with the STM32F411RE library, examples, or documentation.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. For hardware-facing issues, please include enough detail for the setup to be reviewed safely.
+
+  - type: input
+    id: affected-area
+    attributes:
+      label: Affected area
+      description: Example: GPIO driver, I2C library, LCD helper, timer delay, ADC example, README, build/import docs.
+      placeholder: GPIO_Driver/User Library/I2C_Library.c
+    validations:
+      required: true
+
+  - type: input
+    id: board
+    attributes:
+      label: Board or hardware
+      description: Include the exact board name or STM32F411RE hardware being used.
+      placeholder: STM32F411RE Nucleo-style board
+    validations:
+      required: true
+
+  - type: input
+    id: microcontroller
+    attributes:
+      label: Microcontroller
+      description: Confirm the MCU or note if this is documentation-only.
+      placeholder: STM32F411RE
+    validations:
+      required: true
+
+  - type: textarea
+    id: wiring
+    attributes:
+      label: Wiring and connected devices
+      description: List pins, modules, pull-ups, power, and any external devices. Write "not applicable" for documentation-only issues.
+      placeholder: |
+        PB6 -> I2C SCL
+        PB7 -> I2C SDA
+        LCD backpack address: 0x27
+    validations:
+      required: true
+
+  - type: input
+    id: toolchain
+    attributes:
+      label: Toolchain or IDE
+      description: Include IDE/compiler/debugger versions if known.
+      placeholder: STM32CubeIDE version, TrueSTUDIO version, or arm-none-eabi-gcc version
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include build/import steps, flashing steps, wiring setup, and the example or function being used.
+      placeholder: |
+        1. Import GPIO_Driver project.
+        2. Build with ...
+        3. Flash to ...
+        4. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification notes
+      description: Describe what was built, flashed, measured, or inspected. If not tested on hardware, say so.
+      placeholder: |
+        Built: yes/no
+        Flashed: yes/no
+        Hardware tested: yes/no
+        Observed output:
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, screenshots, or measurements
+      description: Paste compiler errors, debugger output, serial output, scope measurements, or screenshots if useful.
+      render: text
+
+  - type: textarea
+    id: extra-context
+    attributes:
+      label: Additional context
+      description: Add anything else that helps explain the issue.
