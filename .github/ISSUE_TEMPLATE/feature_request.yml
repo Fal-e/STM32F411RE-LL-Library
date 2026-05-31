@@ -1,0 +1,100 @@
+name: Feature request
+description: Suggest a project improvement, example, driver change, or documentation addition.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please keep hardware-facing requests specific. Small, reviewable improvements are easier to accept and test.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or missing capability
+      description: What problem should this solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the change you would like to see.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected-area
+    attributes:
+      label: Affected area
+      description: Choose the closest area.
+      options:
+        - Documentation
+        - Build or import flow
+        - GPIO
+        - I2C
+        - Timer or delay
+        - LCD
+        - ADC example
+        - MPU6050 helper
+        - Repository hygiene
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: board
+    attributes:
+      label: Target board or hardware
+      description: Include the board or write "not applicable" for documentation/tooling-only requests.
+      placeholder: STM32F411RE board, LCD module, MPU6050 module, or not applicable
+    validations:
+      required: true
+
+  - type: input
+    id: toolchain
+    attributes:
+      label: Toolchain or IDE
+      description: Include toolchain assumptions if the feature affects build/import behavior.
+      placeholder: STM32CubeIDE, TrueSTUDIO, arm-none-eabi-gcc, or not applicable
+    validations:
+      required: true
+
+  - type: textarea
+    id: wiring
+    attributes:
+      label: Wiring or peripheral assumptions
+      description: List pins, addresses, clock assumptions, voltage levels, or write "not applicable."
+      placeholder: |
+        PB6/PB7 for I2C1
+        LCD address: 0x27
+        System clock:
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks or compatibility concerns
+      description: Note any behavior changes, register/timing risks, or existing examples that might be affected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: validation-plan
+    attributes:
+      label: Suggested verification plan
+      description: How should this be reviewed or tested?
+      placeholder: |
+        Build check:
+        Hardware test:
+        Example affected:
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional. List other approaches if any.
