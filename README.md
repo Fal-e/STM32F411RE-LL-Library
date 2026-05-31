@@ -173,3 +173,5 @@ For hardware-facing changes, include:
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE).
+
+Bundled vendor files retain their own notices. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
