@@ -11,7 +11,7 @@ No source, linker, startup, or project metadata changes are made by this documen
 | `GPIO_Driver/` | `STM32F411RE`, define `STM32F411xE` | Main STM32F411RE example and custom user libraries |
 | `Tutorial1/` | `STM32F411RE`, define `STM32F411xE` | Simple STM32F411RE GPIO tutorial example |
 | `Timers/` | `STM32F411RE`, define `STM32F411xE` | STM32F411RE timer project; current main file is a stub |
-| `stm32_ssbp/` | `STM32F103C8`, define `STM32F10X_MD` | Legacy STM32F103/Blue Pill material; outside the main STM32F411RE scope |
+| `stm32_ssbp/` | `STM32F103C8`, define `STM32F10X_MD` | Legacy STM32F103/Blue Pill reference material; outside the main STM32F411RE scope |
 
 The STM32F411RE project folders contain:
 
@@ -47,6 +47,8 @@ These steps are intended for verification. They still need to be tested on a cle
 10. Confirm whether the IDE produces a fresh `Debug/<project>.elf`, `.map`, and `.list`.
 
 Important: older revisions contained generated `Debug/` outputs. Those outputs are ignored now; a fresh IDE build should recreate them locally.
+
+See [SCOPE.md](SCOPE.md) for the repository scope boundary between the STM32F411RE projects and the legacy STM32F103/Blue Pill material.
 
 ## TrueSTUDIO Import Path
 
