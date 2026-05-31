@@ -142,11 +142,12 @@ Known limitations:
 
 ## Roadmap
 
-- Document third-party notices for bundled CMSIS/ST files.
-- Add or document a reliable build/import path.
+The detailed maintenance roadmap is in [ROADMAP.md](ROADMAP.md). Release steps are in [RELEASE.md](RELEASE.md). The v0.1.0 release notes are in [docs/releases/v0.1.0.md](docs/releases/v0.1.0.md).
+
+- Verify STM32CubeIDE or TrueSTUDIO import for the STM32F411RE project folders.
 - Add compile-only CI once a command-line build exists.
+- Verify examples on real STM32F411RE hardware.
 - Continue cleanup of remaining IDE metadata when the import path is verified.
-- Improve example documentation and wiring notes.
 - Decide the long-term home for legacy STM32F103/Blue Pill reference material.
 - Audit GPIO, I2C, timer, LCD, ADC, and MPU6050 code before behavior changes.
 

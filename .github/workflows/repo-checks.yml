@@ -24,6 +24,8 @@ jobs:
             ".gitignore"
             "LICENSE"
             "CHANGELOG.md"
+            "ROADMAP.md"
+            "RELEASE.md"
             "CONTRIBUTING.md"
             "CODE_OF_CONDUCT.md"
             "THIRD_PARTY_NOTICES.md"
@@ -31,6 +33,7 @@ jobs:
             "docs/BUILDING.md"
             "docs/EXAMPLES.md"
             "docs/SCOPE.md"
+            "docs/releases/v0.1.0.md"
             "docs/CI.md"
             "stm32_ssbp/README.md"
             ".github/pull_request_template.md"
@@ -56,12 +59,15 @@ jobs:
               "README.md" \
               ".gitignore" \
               "CHANGELOG.md" \
+              "ROADMAP.md" \
+              "RELEASE.md" \
               "CONTRIBUTING.md" \
               "CODE_OF_CONDUCT.md" \
               "AGENTS.md" \
               "THIRD_PARTY_NOTICES.md" \
               "stm32_ssbp/README.md" \
               "docs/*.md" \
+              "docs/releases/*.md" \
               ".github/*.md" \
               ".github/**/*.yml" \
               ".github/**/*.yaml"
@@ -84,6 +90,8 @@ jobs:
             README.md \
             .gitignore \
             CHANGELOG.md \
+            ROADMAP.md \
+            RELEASE.md \
             CONTRIBUTING.md \
             CODE_OF_CONDUCT.md \
             AGENTS.md \
@@ -101,4 +109,7 @@ jobs:
           grep -F "docs/BUILDING.md" README.md
           grep -F "docs/EXAMPLES.md" README.md
           grep -F "docs/SCOPE.md" README.md
+          grep -F "ROADMAP.md" README.md
+          grep -F "RELEASE.md" README.md
+          grep -F "docs/releases/v0.1.0.md" README.md
           grep -F "docs/CI.md" README.md
