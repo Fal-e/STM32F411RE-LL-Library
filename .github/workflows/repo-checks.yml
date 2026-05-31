@@ -29,6 +29,7 @@ jobs:
             "THIRD_PARTY_NOTICES.md"
             "AGENTS.md"
             "docs/BUILDING.md"
+            "docs/EXAMPLES.md"
             "docs/CI.md"
             ".github/pull_request_template.md"
             ".github/ISSUE_TEMPLATE/bug_report.yml"
@@ -94,4 +95,5 @@ jobs:
         shell: bash
         run: |
           grep -F "docs/BUILDING.md" README.md
+          grep -F "docs/EXAMPLES.md" README.md
           grep -F "docs/CI.md" README.md

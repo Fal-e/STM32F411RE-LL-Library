@@ -23,7 +23,7 @@ Current checks:
 - required maintenance files exist
 - maintained Markdown/YAML files do not contain trailing whitespace
 - maintained docs/config files do not contain merge-conflict markers
-- README links to build/import and CI documentation
+- README links to build/import, examples, and CI documentation
 
 ## What CI Does Not Check Yet
 
