@@ -21,6 +21,7 @@ jobs:
         run: |
           required_files=(
             "README.md"
+            ".gitignore"
             "LICENSE"
             "CHANGELOG.md"
             "CONTRIBUTING.md"
@@ -50,6 +51,7 @@ jobs:
           mapfile -t files < <(
             git ls-files \
               "README.md" \
+              ".gitignore" \
               "CHANGELOG.md" \
               "CONTRIBUTING.md" \
               "CODE_OF_CONDUCT.md" \
@@ -76,6 +78,7 @@ jobs:
         run: |
           if git grep -n -E "^(<<<<<<<|=======|>>>>>>>)" -- \
             README.md \
+            .gitignore \
             CHANGELOG.md \
             CONTRIBUTING.md \
             CODE_OF_CONDUCT.md \

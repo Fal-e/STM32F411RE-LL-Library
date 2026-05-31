@@ -61,7 +61,7 @@ git diff --check
 To check maintained docs/config files for merge-conflict markers:
 
 ```text
-git grep -n -E "^(<<<<<<<|=======|>>>>>>>)" -- README.md CHANGELOG.md CONTRIBUTING.md CODE_OF_CONDUCT.md AGENTS.md THIRD_PARTY_NOTICES.md docs .github
+git grep -n -E "^(<<<<<<<|=======|>>>>>>>)" -- README.md .gitignore CHANGELOG.md CONTRIBUTING.md CODE_OF_CONDUCT.md AGENTS.md THIRD_PARTY_NOTICES.md docs .github
 ```
 
 For source or hardware-facing PRs, also include the manual build, import, and hardware verification notes requested in the pull request template.

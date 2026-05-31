@@ -46,7 +46,7 @@ These steps are intended for verification. They still need to be tested on a cle
 9. Build the `Debug` configuration first.
 10. Confirm whether the IDE produces a fresh `Debug/<project>.elf`, `.map`, and `.list`.
 
-Important: the repository currently contains old `Debug/` outputs. Treat those files as historical generated artifacts, not as proof that the current checkout built successfully.
+Important: older revisions contained generated `Debug/` outputs. Those outputs are ignored now; a fresh IDE build should recreate them locally.
 
 ## TrueSTUDIO Import Path
 
