@@ -47,18 +47,15 @@ GPIO_Driver/
   User Library/        Custom GPIO, I2C, timer/delay, LCD, and MPU6050 code
   User Application/    Main STM32F411RE example using GPIO, I2C, ADC, and LCD
   Drivers/             Bundled CMSIS/ST files
-  Debug/               Generated build outputs currently tracked; cleanup planned
 
 Tutorial1/
   User Application/    Simple GPIO tutorial example
   Drivers/             Bundled CMSIS/ST files
-  Debug/               Generated build outputs currently tracked; cleanup planned
 
 Timers/
   User Library/        GPIO driver copy used by the timer project
   src/                 Timer project source; current main is a stub
   Drivers/             Bundled CMSIS/ST files
-  Debug/               Generated build outputs currently tracked; cleanup planned
 
 stm32_ssbp/
   Legacy STM32F103/Blue Pill material; scope needs review
@@ -134,7 +131,7 @@ Known limitations:
 
 ## Limitations
 
-- The repository still contains generated IDE/build artifacts.
+- Project-specific Eclipse/Atollic metadata remains in the project folders for import compatibility.
 - CMSIS/ST vendor files are duplicated across project folders.
 - Command-line build support is not yet available.
 - STM32F103/Blue Pill material exists in `stm32_ssbp/` and needs scope review.
@@ -146,7 +143,7 @@ Known limitations:
 - Document third-party notices for bundled CMSIS/ST files.
 - Add or document a reliable build/import path.
 - Add compile-only CI once a command-line build exists.
-- Clean generated IDE metadata and build outputs from source control.
+- Continue cleanup of remaining IDE metadata when the import path is verified.
 - Improve example documentation and wiring notes.
 - Clarify legacy/out-of-scope material.
 - Audit GPIO, I2C, timer, LCD, ADC, and MPU6050 code before behavior changes.

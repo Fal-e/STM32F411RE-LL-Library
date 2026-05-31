@@ -1,0 +1,25 @@
+# Eclipse/STM32 workspace metadata
+.metadata/
+
+# Build output directories
+Debug/
+Release/
+build/
+
+# Embedded build artifacts
+*.o
+*.d
+*.su
+*.elf
+*.map
+*.list
+*.lst
+*.hex
+*.bin
+*.srec
+*.axf
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
