@@ -2,7 +2,7 @@
 
 This document describes the examples and example-style helper code currently in the STM32F411RE portions of the repository. It is based on the checked-in source files only. Hardware wiring, build import, flashing, and runtime behavior still need verification on real hardware unless noted otherwise.
 
-The legacy `stm32_ssbp/` STM32F103/Blue Pill material is not covered here. It will be handled by the separate scope-audit work.
+The legacy `stm32_ssbp/` STM32F103/Blue Pill material is not covered here. See [SCOPE.md](SCOPE.md) and [../stm32_ssbp/README.md](../stm32_ssbp/README.md) for its current status.
 
 ## Quick Index
 

@@ -30,7 +30,9 @@ jobs:
             "AGENTS.md"
             "docs/BUILDING.md"
             "docs/EXAMPLES.md"
+            "docs/SCOPE.md"
             "docs/CI.md"
+            "stm32_ssbp/README.md"
             ".github/pull_request_template.md"
             ".github/ISSUE_TEMPLATE/bug_report.yml"
             ".github/ISSUE_TEMPLATE/feature_request.yml"
@@ -58,6 +60,7 @@ jobs:
               "CODE_OF_CONDUCT.md" \
               "AGENTS.md" \
               "THIRD_PARTY_NOTICES.md" \
+              "stm32_ssbp/README.md" \
               "docs/*.md" \
               ".github/*.md" \
               ".github/**/*.yml" \
@@ -85,6 +88,7 @@ jobs:
             CODE_OF_CONDUCT.md \
             AGENTS.md \
             THIRD_PARTY_NOTICES.md \
+            stm32_ssbp/README.md \
             docs \
             .github; then
             echo "Merge-conflict marker found."
@@ -96,4 +100,5 @@ jobs:
         run: |
           grep -F "docs/BUILDING.md" README.md
           grep -F "docs/EXAMPLES.md" README.md
+          grep -F "docs/SCOPE.md" README.md
           grep -F "docs/CI.md" README.md

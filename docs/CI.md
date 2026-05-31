@@ -23,7 +23,7 @@ Current checks:
 - required maintenance files exist
 - maintained Markdown/YAML files do not contain trailing whitespace
 - maintained docs/config files do not contain merge-conflict markers
-- README links to build/import, examples, and CI documentation
+- README links to build/import, examples, scope, and CI documentation
 
 ## What CI Does Not Check Yet
 
@@ -61,7 +61,7 @@ git diff --check
 To check maintained docs/config files for merge-conflict markers:
 
 ```text
-git grep -n -E "^(<<<<<<<|=======|>>>>>>>)" -- README.md .gitignore CHANGELOG.md CONTRIBUTING.md CODE_OF_CONDUCT.md AGENTS.md THIRD_PARTY_NOTICES.md docs .github
+git grep -n -E "^(<<<<<<<|=======|>>>>>>>)" -- README.md .gitignore CHANGELOG.md CONTRIBUTING.md CODE_OF_CONDUCT.md AGENTS.md THIRD_PARTY_NOTICES.md stm32_ssbp/README.md docs .github
 ```
 
 For source or hardware-facing PRs, also include the manual build, import, and hardware verification notes requested in the pull request template.

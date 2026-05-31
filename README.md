@@ -58,7 +58,7 @@ Timers/
   Drivers/             Bundled CMSIS/ST files
 
 stm32_ssbp/
-  Legacy STM32F103/Blue Pill material; scope needs review
+  Legacy STM32F103/Blue Pill reference material
 ```
 
 ## Getting Started
@@ -84,7 +84,7 @@ Needs verification:
 - Building with Atollic TrueSTUDIO 9.1.0 or a compatible Eclipse-based setup.
 - Building with `arm-none-eabi-gcc` from the command line.
 
-Detailed import notes are in [docs/BUILDING.md](docs/BUILDING.md). Example notes are in [docs/EXAMPLES.md](docs/EXAMPLES.md). CI notes are in [docs/CI.md](docs/CI.md). A reproducible command-line build system is planned but is not yet present.
+Detailed import notes are in [docs/BUILDING.md](docs/BUILDING.md). Example notes are in [docs/EXAMPLES.md](docs/EXAMPLES.md). Scope notes are in [docs/SCOPE.md](docs/SCOPE.md). CI notes are in [docs/CI.md](docs/CI.md). A reproducible command-line build system is planned but is not yet present.
 
 ## Example Summary
 
@@ -136,7 +136,7 @@ Known limitations:
 - Project-specific Eclipse/Atollic metadata remains in the project folders for import compatibility.
 - CMSIS/ST vendor files are duplicated across project folders.
 - Command-line build support is not yet available.
-- STM32F103/Blue Pill material exists in `stm32_ssbp/` and needs scope review.
+- STM32F103/Blue Pill material exists in `stm32_ssbp/` as legacy reference material.
 - Hardware behavior has not yet been fully audited during the revival.
 - Some comments, names, and examples reflect the original older project state.
 
@@ -147,7 +147,7 @@ Known limitations:
 - Add compile-only CI once a command-line build exists.
 - Continue cleanup of remaining IDE metadata when the import path is verified.
 - Improve example documentation and wiring notes.
-- Clarify legacy/out-of-scope material.
+- Decide the long-term home for legacy STM32F103/Blue Pill reference material.
 - Audit GPIO, I2C, timer, LCD, ADC, and MPU6050 code before behavior changes.
 
 ## Contributing
