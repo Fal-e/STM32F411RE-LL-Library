@@ -14,3 +14,7 @@ Notable repository maintenance changes will be documented here.
 - Documented third-party notices for bundled CMSIS/ST/vendor files.
 - Rewrote the README project overview.
 - Added MIT license and project status metadata.
+
+### Removed
+
+- Removed generated Eclipse workspace metadata and Debug build outputs from source control.
