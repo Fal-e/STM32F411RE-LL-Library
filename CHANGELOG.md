@@ -6,6 +6,7 @@ Notable repository maintenance changes will be documented here.
 
 ### Added
 
+- Added examples documentation for the current STM32F411RE examples and helper modules.
 - Added lightweight repository checks CI and CI limits documentation.
 - Added build and import documentation for the existing STM32 project files.
 - Added maintainer guidance for embedded C reviews.
