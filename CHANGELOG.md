@@ -6,6 +6,7 @@ Notable repository maintenance changes will be documented here.
 
 ### Added
 
+- Added lightweight repository checks CI and CI limits documentation.
 - Added build and import documentation for the existing STM32 project files.
 - Added maintainer guidance for embedded C reviews.
 - Added GitHub issue and pull request templates.
