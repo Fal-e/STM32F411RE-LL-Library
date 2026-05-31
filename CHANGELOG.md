@@ -4,8 +4,13 @@ Notable repository maintenance changes will be documented here.
 
 ## Unreleased
 
+- No unreleased changes yet.
+
+## v0.1.0 - revived public maintenance baseline
+
 ### Added
 
+- Added release checklist, roadmap, and v0.1.0 release notes.
 - Added scope documentation for the STM32F411RE project folders and legacy STM32F103/Blue Pill material.
 - Added examples documentation for the current STM32F411RE examples and helper modules.
 - Added lightweight repository checks CI and CI limits documentation.
