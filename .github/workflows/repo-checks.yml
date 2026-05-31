@@ -1,0 +1,94 @@
+name: Repository checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - Development
+  workflow_dispatch:
+
+jobs:
+  docs-and-metadata:
+    name: Docs and metadata
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check required maintenance files
+        shell: bash
+        run: |
+          required_files=(
+            "README.md"
+            "LICENSE"
+            "CHANGELOG.md"
+            "CONTRIBUTING.md"
+            "CODE_OF_CONDUCT.md"
+            "THIRD_PARTY_NOTICES.md"
+            "AGENTS.md"
+            "docs/BUILDING.md"
+            "docs/CI.md"
+            ".github/pull_request_template.md"
+            ".github/ISSUE_TEMPLATE/bug_report.yml"
+            ".github/ISSUE_TEMPLATE/feature_request.yml"
+          )
+
+          missing=0
+          for file in "${required_files[@]}"; do
+            if [[ ! -f "$file" ]]; then
+              echo "Missing required file: $file"
+              missing=1
+            fi
+          done
+
+          exit "$missing"
+
+      - name: Check maintained text files for trailing whitespace
+        shell: bash
+        run: |
+          mapfile -t files < <(
+            git ls-files \
+              "README.md" \
+              "CHANGELOG.md" \
+              "CONTRIBUTING.md" \
+              "CODE_OF_CONDUCT.md" \
+              "AGENTS.md" \
+              "THIRD_PARTY_NOTICES.md" \
+              "docs/*.md" \
+              ".github/*.md" \
+              ".github/**/*.yml" \
+              ".github/**/*.yaml"
+          )
+
+          if [[ "${#files[@]}" -eq 0 ]]; then
+            echo "No maintained text files found."
+            exit 0
+          fi
+
+          if grep -nE "[[:blank:]]$" "${files[@]}"; then
+            echo "Trailing whitespace found in maintained text files."
+            exit 1
+          fi
+
+      - name: Check maintained files for merge-conflict markers
+        shell: bash
+        run: |
+          if git grep -n -E "^(<<<<<<<|=======|>>>>>>>)" -- \
+            README.md \
+            CHANGELOG.md \
+            CONTRIBUTING.md \
+            CODE_OF_CONDUCT.md \
+            AGENTS.md \
+            THIRD_PARTY_NOTICES.md \
+            docs \
+            .github; then
+            echo "Merge-conflict marker found."
+            exit 1
+          fi
+
+      - name: Check README documentation links
+        shell: bash
+        run: |
+          grep -F "docs/BUILDING.md" README.md
+          grep -F "docs/CI.md" README.md
