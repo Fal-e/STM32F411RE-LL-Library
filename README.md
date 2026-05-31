@@ -157,6 +157,8 @@ Known limitations:
 
 This repository is being revived with small, reviewable changes.
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full contribution workflow and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for participation expectations.
+
 Preferred workflow:
 
 ```text
