@@ -1,6 +1,10 @@
 # STM32F411RE-LL-Library
 Simple Low Level Library for STM32F411RE Microcontroller by Suad Shahini
 
+## Project status
+
+This is an older STM32F411RE bare-metal low-level library being revived for public open-source maintenance. Current work is focused on documentation, buildability, examples, maintainability, and safe review of existing hardware-facing code.
+
 Developed a library for the STM32F411RE microcontroller which contains functions for: GPIO, I2C, Timer (delay function), LCD 4 bit, 8 bit and LCD I2C. Bare-metal programming was used to develop the libraries.
     
    To see the custom libraries:
@@ -18,5 +22,8 @@ Developed a library for the STM32F411RE microcontroller which contains functions
    Connections: Connect voltage output of a potentiomer to PORT C Pin 0 
                 Connect I2C pins to the microcontroller. Connect pin 6 (SCL) and pin 7 (SDA) to PORT B
                 
-                
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
+
  
