@@ -6,6 +6,7 @@ Notable repository maintenance changes will be documented here.
 
 ### Added
 
+- Added scope documentation for the STM32F411RE project folders and legacy STM32F103/Blue Pill material.
 - Added examples documentation for the current STM32F411RE examples and helper modules.
 - Added lightweight repository checks CI and CI limits documentation.
 - Added build and import documentation for the existing STM32 project files.
